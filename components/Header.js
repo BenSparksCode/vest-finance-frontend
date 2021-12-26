@@ -1,7 +1,9 @@
+import { css } from "styled-jsx/css";
+
 const Header = () => (
   <div className="Header">
     HEADER
-    <style jsx>{`
+    <style css>{`
       background-color: blue;
       color: white;
       width: 100%;

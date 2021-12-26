@@ -1,3 +1,5 @@
+import { css } from "styled-jsx/css";
+
 import Head from "next/head";
 
 import Header from "./Header";
@@ -14,7 +16,7 @@ const Layout = (props) => (
     <Header />
     <div className="Content">{props.children}</div>
     <NavBar />
-    <style jsx global>{`
+    <style css global="true">{`
       * {
         box-sizing: border-box;
       }
