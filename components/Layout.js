@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import Header from "./Header";
 import NavBar from "./NavBar";
 
@@ -16,6 +18,10 @@ const contentStyle = {
 
 const Layout = (props) => (
   <div className="Layout" style={layoutStyle}>
+    <Head>
+      <title>Vest Finance</title>
+    </Head>
+
     <Header />
     <div className="Content" style={contentStyle}>
       {props.children}
