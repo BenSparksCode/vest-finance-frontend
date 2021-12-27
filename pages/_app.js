@@ -1,7 +1,8 @@
 import Layout from "../components/Layout";
+import LandingView from "./landing";
 
 import "../styles.scss";
 
-const App = () => <Layout>Welcome to Vest Finance</Layout>;
+const App = () => <LandingView />;
 
 export default App;
