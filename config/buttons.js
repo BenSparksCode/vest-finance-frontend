@@ -9,8 +9,8 @@ import {
 
 const navButtons = [
   {
-    label: "Explore",
-    path: "/explore",
+    label: "Dashboard",
+    path: "/dashboard",
     icon: <FontAwesomeIcon icon={faCompass} />,
   },
   {

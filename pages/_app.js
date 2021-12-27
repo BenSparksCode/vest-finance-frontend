@@ -11,12 +11,6 @@ const App = () => (
     <Link href="/">
       <a>Welcome to Vest Finance</a>
     </Link>
-
-    <br />
-
-    <Link href="/dashboard">
-      <button>Dashboard</button>
-    </Link>
   </Layout>
 );
 
