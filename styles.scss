@@ -1,4 +1,4 @@
-// @import "./theme/theme";
+@import "./theme/theme";
 
 * {
   box-sizing: border-box;
@@ -44,7 +44,18 @@ code {
   .Content {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    background: $secondary;
+    color: $on-secondary;
+    font-family: $core-font;
+
+    a {
+      color: inherit;
+    }
   }
 }
 
@@ -60,13 +71,14 @@ code {
 
   padding: 0 20px;
 
-  font-family: Arial, sans-serif;
+  font-family: $logo-font;
   font-size: 24px;
   font-weight: bold;
   color: white;
+  color: $on-secondary;
   text-transform: uppercase;
 
-  background: crimson;
+  background: $highlight;
 
   cursor: pointer;
 }
@@ -80,13 +92,13 @@ code {
 
   height: 60px;
   width: 100%;
-  padding: 10px 0;
+  padding: 5px 0;
 
-  background: crimson;
+  background: $primary;
 
-  font-family: Arial, sans-serif;
+  font-family: $core-font;
   font-size: 22px;
-  color: white;
+  color: $on-primary-light;
 
   box-shadow: 0px -2px 15px rgba(50, 50, 50, 0.45);
 
@@ -96,6 +108,6 @@ code {
   }
 
   .active {
-    color: navy;
+    color: $highlight;
   }
 }
