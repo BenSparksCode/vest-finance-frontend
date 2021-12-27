@@ -3,6 +3,8 @@ import Head from "next/head";
 import Header from "./Header";
 import NavBar from "./NavBar";
 
+import navButtons from "../config/buttons";
+
 const Layout = (props) => {
   const appTitle = `Vest Finance`;
 
@@ -16,7 +18,7 @@ const Layout = (props) => {
 
       <Header appTitle={appTitle} />
       <div className="Content">{props.children}</div>
-      <NavBar />
+      <NavBar navButtons={navButtons} />
     </div>
   );
 };
